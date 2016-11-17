@@ -1,0 +1,19 @@
+.php {
+  &.meta.embedded.block {
+    >.punctuation.section.embedded {
+      color: @syntax-color-definition;
+    }
+  }
+  &.variable.other {
+    color: @syntax-color-variable;
+  }
+  &.constant.other {
+    color: @syntax-color-type;
+  }
+  &.storage.modifier {
+    color: @syntax-color-class;
+  }
+  &.keyword.operator.class {
+    color: darken(@syntax-color-variable, 10%);
+  }
+}

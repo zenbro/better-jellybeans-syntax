@@ -1,0 +1,21 @@
+.rust {
+  &.keyword.other {
+    color: @syntax-color-definition;
+  }
+  &.keyword {
+    &.operator.sigil {
+      color: @syntax-color-symbol;
+    }
+  }
+  &.variable.language {
+    color: @syntax-color-constant;
+  }
+  &.storage.modifier.lifetime,
+  &.entity.name.lifetime {
+    color: @syntax-color-constant !important;
+  }
+  &.meta.attribute {
+    color: @syntax-color-variable !important;
+  }
+
+}

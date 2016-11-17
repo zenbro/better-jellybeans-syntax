@@ -1,0 +1,48 @@
+@import "colors";
+
+// General colors
+@syntax-text-color: @normal;
+@syntax-cursor-color: @cursor-bg;
+@syntax-selection-color: @visual-bg;
+@syntax-background-color: @background;
+
+// Guide colors
+@syntax-wrap-guide-color: @indent-guides-even-bg;
+@syntax-indent-guide-color: @indent-guides-odd-bg;
+@syntax-invisible-character-color: @special-key;
+
+// For find and replace markers
+@syntax-result-marker-color: @ruby-class;
+@syntax-result-marker-color-selected: @type;
+
+// Gutter colors
+@syntax-gutter-text-color: @line-nr;
+@syntax-gutter-text-color-selected: @cursor-line-nr;
+@syntax-gutter-background-color: @line-nr-bg;
+@syntax-gutter-background-color-selected: @cursor-line-bg;
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: @diff-change-bg;
+@syntax-color-added: @diff-add-bg;
+@syntax-color-modified: @type;
+@syntax-color-removed: @diff-delete-bg;
+
+// For language entity colors
+@syntax-color-variable:   @identifier;
+@syntax-color-constant:   @constant;
+@syntax-color-definition: @operator;
+@syntax-color-function:   @function;
+@syntax-color-type:       @type;
+@syntax-color-class:      @ruby-class;
+@syntax-color-symbol:     @ruby-symbol;
+@syntax-color-control:    @ruby-control;
+@syntax-color-comment:    @comment;
+@syntax-color-import:     @statement;
+@syntax-color-string:     @string;
+
+@syntax-deprecated-fg: darken(@syntax-color-modified, 60%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg:    lighten(@syntax-color-removed, 60%);
+@syntax-illegal-bg:    @syntax-color-removed;
+
+@syntax-selection-flash-color: @syntax-color-class;

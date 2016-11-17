@@ -1,0 +1,27 @@
+.go {
+  .keyword {
+    &.package,
+    &.import {
+      color: @syntax-color-import;
+    }
+
+    &.channel {
+      color: @syntax-color-symbol;
+    }
+
+    &.operator.address {
+      color: @syntax-color-symbol;
+    }
+
+    &.var,
+    &.type,
+    &.const,
+    &.function {
+      color: @syntax-color-definition;
+    }
+
+    &.struct {
+      color: @syntax-color-type;
+    }
+  }
+}

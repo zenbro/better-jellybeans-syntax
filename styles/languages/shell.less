@@ -1,0 +1,14 @@
+.shell {
+  .variable.other {
+    &.other,
+    &.positional {
+      color: @syntax-color-variable;
+    }
+  }
+  .string.interpolated.dollar {
+    color: inherit;
+  }
+  .keyword.control.heredoc-token.shell {
+    color: @string-delimiter;
+  }
+}

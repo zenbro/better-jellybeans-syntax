@@ -1,0 +1,20 @@
+.ruby {
+  .punctuation.separator.variable {
+    color: inherit;
+  }
+
+  &.language.self {
+    color: @syntax-color-constant;
+  }
+  .keyword {
+    &.control {
+      &.def {
+        color: @syntax-color-definition;
+      }
+
+      &.module {
+        color: @syntax-color-class;
+      }
+    }
+  }
+}

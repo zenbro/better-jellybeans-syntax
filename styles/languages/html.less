@@ -1,0 +1,18 @@
+.html,
+.xml,
+.jsx {
+  &.meta.tag.sgml {
+    color: @syntax-color-comment;
+    >.punctuation {
+      color: inherit;
+    }
+  }
+  &.punctuation {
+    &.definition.tag {
+      color: @syntax-color-import;
+    }
+  }
+  &.entity.name.tag.namespace {
+    color: @syntax-color-function;
+  }
+}

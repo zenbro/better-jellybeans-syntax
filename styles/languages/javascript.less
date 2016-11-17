@@ -1,0 +1,76 @@
+.js {
+  .storage {
+    &.type {
+      color: @syntax-color-definition;
+
+      &.class.jsdoc {
+        color: @syntax-color-variable;
+        font-style: normal;
+      }
+    }
+  }
+
+  .support.variable.dom,
+  .support.type.object.dom,
+  .variable.language.self,
+  .variable.language.this {
+    color: @syntax-color-constant;
+  }
+  &.variable.language.prototype,
+  &.variable.language.proto {
+    color: @storage-class;
+  }
+
+  &.string.regexp {
+    .punctuation.definition.string {
+      color: @ruby-regexp-delimiter;
+    }
+  }
+
+
+  &.variable.other.property {
+    color: @syntax-color-symbol;
+  }
+
+  &.constant.other.object.key {
+    color: @syntax-color-symbol;
+    >.string.unquoted {
+      color: @syntax-color-symbol;
+    }
+  }
+
+
+  .keyword {
+    &.operator {
+      color: @syntax-color-import;
+
+      &.comparison,
+      &.logical,
+      &.arithmetic,
+      &.accessor,
+      &.relational,
+      &.assignment {
+        color: inherit;
+      }
+      &.regexp {
+        color: lighten(@ruby-regexp, 25%);
+      }
+
+      &.bitwise {
+        color: darken(@syntax-color-constant, 15%);
+      }
+
+      &.ternary {
+        color: @syntax-color-control;
+      }
+    }
+    &.control {
+      &.anchor.regexp {
+        color: lighten(@ruby-regexp, 25%);
+      }
+      &.module {
+        color: @syntax-color-import;
+      }
+    }
+  }
+}

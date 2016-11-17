@@ -1,0 +1,35 @@
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+  &.heading {
+    color: @syntax-color-type;
+  }
+}
+
+.gfm {
+  &.heading {
+    color: @syntax-color-type;
+  }
+
+  &.code > .support,
+  &.raw {
+    color: @syntax-color-string;
+  }
+
+  &.underline.link {
+    color: @syntax-color-symbol;
+    text-decoration: none;
+    >.punctuation.definition {
+      color: darken(@syntax-color-symbol, 10%);
+    }
+  }
+
+  .link {
+    color: @syntax-color-constant;
+    >.entity {
+      color: @syntax-color-function;
+    }
+    >.punctuation.definition {
+      color: @syntax-color-type;
+    }
+  }
+}
