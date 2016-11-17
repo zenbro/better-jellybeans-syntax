@@ -1,3 +1,5 @@
+[![apm downloads](https://img.shields.io/apm/dm/better-jellybeans-syntax.svg)](https://atom.io/themes/better-jellybeans-syntax)
+
 # Better Jellybeans Syntax theme
 
 One of the best Vim color scheme comes to Atom (third and the last time).
