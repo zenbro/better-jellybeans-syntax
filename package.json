@@ -1,11 +1,13 @@
 {
   "name": "better-jellybeans-syntax",
   "theme": "syntax",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "One of the best Vim color scheme comes to Atom (third and the last time).",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "dark",
+    "colorful"
   ],
   "repository": "https://github.com/zenbro/better-jellybeans-syntax",
   "license": "MIT",
