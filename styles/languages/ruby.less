@@ -16,5 +16,13 @@
         color: @syntax-color-class;
       }
     }
+    &.operator.other {
+      color: @syntax-text-color;
+    }
+  }
+  &.variable.other.object {
+    >.punctuation.definition.variable {
+      color: @syntax-color-constant;
+    }
   }
 }
