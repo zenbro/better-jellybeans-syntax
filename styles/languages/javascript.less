@@ -3,9 +3,16 @@
     &.type {
       color: @syntax-color-definition;
 
+      &.class {
+        color: @syntax-color-class;
+
+        &.jsdoc {
+          color: @syntax-color-variable;
+          font-style: normal;
+        }
+      }
+
       &.class.jsdoc {
-        color: @syntax-color-variable;
-        font-style: normal;
       }
     }
   }
