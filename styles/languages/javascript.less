@@ -27,6 +27,15 @@
     }
   }
 
+  &.punctuation.definition.quasi {
+    >.string.quoted.template {
+      color: @string-delimiter;
+    }
+  }
+
+  &.punctuation.quasi.element {
+    color: @syntax-color-variable;
+  }
 
   &.variable.other.property {
     color: @syntax-color-symbol;
@@ -38,7 +47,6 @@
       color: @syntax-color-symbol;
     }
   }
-
 
   .keyword {
     &.operator {
