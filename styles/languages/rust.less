@@ -1,20 +1,20 @@
-.rust {
-  &.keyword.other {
+.syntax--rust {
+  &.syntax--keyword.syntax--other {
     color: @syntax-color-definition;
   }
-  &.keyword {
-    &.operator.sigil {
+  &.syntax--keyword {
+    &.syntax--operator.syntax--sigil {
       color: @syntax-color-symbol;
     }
   }
-  &.variable.language {
+  &.syntax--variable.syntax--language {
     color: @syntax-color-constant;
   }
-  &.storage.modifier.lifetime,
-  &.entity.name.lifetime {
+  &.syntax--storage.syntax--modifier.syntax--lifetime,
+  &.syntax--entity.syntax--name.syntax--lifetime {
     color: @syntax-color-constant !important;
   }
-  &.meta.attribute {
+  &.syntax--meta.syntax--attribute {
     color: @syntax-color-variable !important;
   }
 

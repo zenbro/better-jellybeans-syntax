@@ -1,27 +1,27 @@
-.ruby {
-  .punctuation.separator.variable {
+.syntax--ruby {
+  .syntax--punctuation.syntax--separator.syntax--variable {
     color: inherit;
   }
 
-  &.language.self {
+  &.syntax--language.syntax--self {
     color: @syntax-color-constant;
   }
-  .keyword {
-    &.control {
-      &.def {
+  .syntax--keyword {
+    &.syntax--control {
+      &.syntax--def {
         color: @syntax-color-definition;
       }
 
-      &.module {
+      &.syntax--module {
         color: @syntax-color-class;
       }
     }
-    &.operator.other {
+    &.syntax--operator.syntax--other {
       color: @syntax-text-color;
     }
   }
-  &.variable.other.object {
-    >.punctuation.definition.variable {
+  &.syntax--variable.syntax--other.syntax--object {
+    >.syntax--punctuation.syntax--definition.syntax--variable {
       color: @syntax-color-constant;
     }
   }

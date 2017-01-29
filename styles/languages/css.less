@@ -1,51 +1,51 @@
-.css,
-.sass,
-.scss {
-  .entity.other.attribute-name {
-    &.class {
+.syntax--css,
+.syntax--sass,
+.syntax--scss {
+  .syntax--entity.syntax--other.syntax--attribute-name {
+    &.syntax--class {
       color: @syntax-color-function;
     }
-    &.attribute {
+    &.syntax--attribute {
       color: @special;
     }
-    &.pseudo-class {
+    &.syntax--pseudo-class {
       color: @syntax-color-definition;
     }
   }
-  .keyword {
-    &.control.at-rule.font-face {
+  .syntax--keyword {
+    &.syntax--control.syntax--at-rule.syntax--font-face {
       color: @special;
-      >.punctuation.definition.keyword {
+      >.syntax--punctuation.syntax--definition.syntax--keyword {
         color: darken(@special, 10%);
       }
     }
-    &.other.important {
+    &.syntax--other.syntax--important {
       color: @special;
     }
   }
-  .support.type.property-name {
+  .syntax--support.syntax--type.syntax--property-name {
     color: @storage-class;
   }
 }
 
-.less,
-.sass,
-.scss {
-  .keyword.control.at-rule.import {
+.syntax--less,
+.syntax--sass,
+.syntax--scss {
+  .syntax--keyword.syntax--control.syntax--at-rule.syntax--import {
     color: @syntax-color-import;
-    >.punctuation.definition.keyword {
+    >.syntax--punctuation.syntax--definition.syntax--keyword {
       color: darken(@statement, 10%);
     }
   }
-  .variable {
+  .syntax--variable {
     color: @syntax-color-variable;
   }
 }
 
-.sass {
-  .variable-usage,
-  .variable-declaration {
-    .punctuation.definition.entity {
+.syntax--sass {
+  .syntax--variable-usage,
+  .syntax--variable-declaration {
+    .syntax--punctuation.syntax--definition.syntax--entity {
       color: darken(@syntax-color-variable, 10%);
     }
   }

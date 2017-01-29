@@ -1,14 +1,14 @@
-.shell {
-  .variable.other {
-    &.other,
-    &.positional {
+.syntax--shell {
+  .syntax--variable.syntax--other {
+    &.syntax--other,
+    &.syntax--positional {
       color: @syntax-color-variable;
     }
   }
-  .string.interpolated.dollar {
+  .syntax--string.syntax--interpolated.syntax--dollar {
     color: inherit;
   }
-  .keyword.control.heredoc-token.shell {
+  .syntax--keyword.syntax--control.syntax--heredoc-token.syntax--shell {
     color: @string-delimiter;
   }
 }

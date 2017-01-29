@@ -1,18 +1,18 @@
-.html,
-.xml,
-.jsx {
-  &.meta.tag.sgml {
+.syntax--html,
+.syntax--xml,
+.syntax--jsx {
+  &.syntax--meta.syntax--tag.syntax--sgml {
     color: @syntax-color-comment;
-    >.punctuation {
+    >.syntax--punctuation {
       color: inherit;
     }
   }
-  &.punctuation {
-    &.definition.tag {
+  &.syntax--punctuation {
+    &.syntax--definition.syntax--tag {
       color: @syntax-color-import;
     }
   }
-  &.entity.name.tag.namespace {
+  &.syntax--entity.syntax--name.syntax--tag.syntax--namespace {
     color: @syntax-color-function;
   }
 }

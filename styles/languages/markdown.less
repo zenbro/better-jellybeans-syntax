@@ -1,34 +1,34 @@
-.source.gfm .markup {
+.syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
-  &.heading {
+  &.syntax--heading {
     color: @syntax-color-type;
   }
 }
 
-.gfm {
-  &.heading {
+.syntax--gfm {
+  &.syntax--heading {
     color: @syntax-color-type;
   }
 
-  &.code > .support,
-  &.raw {
+  &.syntax--code > .syntax--support,
+  &.syntax--raw {
     color: @syntax-color-string;
   }
 
-  &.underline.link {
+  &.syntax--underline.syntax--link {
     color: @syntax-color-symbol;
     text-decoration: none;
-    >.punctuation.definition {
+    >.syntax--punctuation.syntax--definition {
       color: darken(@syntax-color-symbol, 10%);
     }
   }
 
-  .link {
+  .syntax--link {
     color: @syntax-color-constant;
-    >.entity {
+    >.syntax--entity {
       color: @syntax-color-function;
     }
-    >.punctuation.definition {
+    >.syntax--punctuation.syntax--definition {
       color: @syntax-color-type;
     }
   }

@@ -1,3 +1,6 @@
+## 1.0.0, 1.0.1, 1.0.2
+* Prepend "syntax--" to all css classes. Goodbye deprecation in Atom 1.13.0!
+
 ## 0.3.2
 * Better highlight of ES6 template strings
 * Fix highlight of classes in ES6

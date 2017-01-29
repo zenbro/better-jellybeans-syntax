@@ -1,12 +1,12 @@
-.yaml {
-  &.entity.name.tag {
+.syntax--yaml {
+  &.syntax--entity.syntax--name.syntax--tag {
     color: @syntax-color-variable;
-    >.punctuation.separator.key-value {
+    >.syntax--punctuation.syntax--separator.syntax--key-value {
       color: darken(@syntax-color-variable, 10%);
     }
   }
 
-  &.string.unquoted {
+  &.syntax--string.syntax--unquoted {
     color: @syntax-text-color;
   }
 }
