@@ -1,89 +1,89 @@
-.syntax--syntax--js {
-  .syntax--syntax--storage {
-    &.syntax--syntax--type {
+.syntax--js {
+  .syntax--storage {
+    &.syntax--type {
       color: @syntax-color-definition;
 
-      &.syntax--syntax--class {
+      &.syntax--class {
         color: @syntax-color-class;
 
-        &.syntax--syntax--jsdoc {
+        &.syntax--jsdoc {
           color: @syntax-color-variable;
           font-style: normal;
         }
       }
 
-      &.syntax--syntax--class.syntax--syntax--jsdoc {
+      &.syntax--class.syntax--jsdoc {
       }
     }
   }
 
-  .syntax--syntax--support.syntax--syntax--variable.syntax--syntax--dom,
-  .syntax--syntax--support.syntax--syntax--type.syntax--syntax--object.syntax--syntax--dom,
-  .syntax--syntax--variable.syntax--syntax--language.syntax--syntax--self,
-  .syntax--syntax--variable.syntax--syntax--language.syntax--syntax--this {
+  .syntax--support.syntax--variable.syntax--dom,
+  .syntax--support.syntax--type.syntax--object.syntax--dom,
+  .syntax--variable.syntax--language.syntax--self,
+  .syntax--variable.syntax--language.syntax--this {
     color: @syntax-color-constant;
   }
-  &.syntax--syntax--variable.syntax--syntax--language.syntax--syntax--prototype,
-  &.syntax--syntax--variable.syntax--syntax--language.syntax--syntax--proto {
+  &.syntax--variable.syntax--language.syntax--prototype,
+  &.syntax--variable.syntax--language.syntax--proto {
     color: @storage-class;
   }
 
-  &.syntax--syntax--string.syntax--syntax--regexp {
-    .syntax--syntax--punctuation.syntax--syntax--definition.syntax--syntax--string {
+  &.syntax--string.syntax--regexp {
+    .syntax--punctuation.syntax--definition.syntax--string {
       color: @ruby-regexp-delimiter;
     }
   }
 
-  &.syntax--syntax--punctuation.syntax--syntax--definition.syntax--syntax--quasi {
-    >.syntax--syntax--string.syntax--syntax--quoted.syntax--syntax--template {
+  &.syntax--punctuation.syntax--definition.syntax--quasi {
+    >.syntax--string.syntax--quoted.syntax--template {
       color: @string-delimiter;
     }
   }
 
-  &.syntax--syntax--punctuation.syntax--syntax--quasi.syntax--syntax--element {
+  &.syntax--punctuation.syntax--quasi.syntax--element {
     color: @syntax-color-variable;
   }
 
-  &.syntax--syntax--variable.syntax--syntax--other.syntax--syntax--property {
+  &.syntax--variable.syntax--other.syntax--property {
     color: @syntax-color-symbol;
   }
 
-  &.syntax--syntax--constant.syntax--syntax--other.syntax--syntax--object.syntax--syntax--key {
+  &.syntax--constant.syntax--other.syntax--object.syntax--key {
     color: @syntax-color-symbol;
-    >.syntax--syntax--string.syntax--syntax--unquoted {
+    >.syntax--string.syntax--unquoted {
       color: @syntax-color-symbol;
     }
   }
 
-  .syntax--syntax--keyword {
-    &.syntax--syntax--operator {
+  .syntax--keyword {
+    &.syntax--operator {
       color: @syntax-color-import;
 
-      &.syntax--syntax--comparison,
-      &.syntax--syntax--logical,
-      &.syntax--syntax--arithmetic,
-      &.syntax--syntax--accessor,
-      &.syntax--syntax--relational,
-      &.syntax--syntax--assignment {
+      &.syntax--comparison,
+      &.syntax--logical,
+      &.syntax--arithmetic,
+      &.syntax--accessor,
+      &.syntax--relational,
+      &.syntax--assignment {
         color: inherit;
       }
-      &.syntax--syntax--regexp {
+      &.syntax--regexp {
         color: lighten(@ruby-regexp, 25%);
       }
 
-      &.syntax--syntax--bitwise {
+      &.syntax--bitwise {
         color: darken(@syntax-color-constant, 15%);
       }
 
-      &.syntax--syntax--ternary {
+      &.syntax--ternary {
         color: @syntax-color-control;
       }
     }
-    &.syntax--syntax--control {
-      &.syntax--syntax--anchor.syntax--syntax--regexp {
+    &.syntax--control {
+      &.syntax--anchor.syntax--regexp {
         color: lighten(@ruby-regexp, 25%);
       }
-      &.syntax--syntax--module {
+      &.syntax--module {
         color: @syntax-color-import;
       }
     }
