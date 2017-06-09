@@ -31,6 +31,26 @@
     color: @todo;
     text-decoration: none;
   }
+  >.syntax--storage {
+    &.syntax--type {
+      &.syntax--class {
+        &.syntax--todo,
+        &.syntax--hack,
+        &.syntax--bug,
+        &.syntax--note,
+        &.syntax--idea,
+        &.syntax--changed,
+        &.syntax--question,
+        &.syntax--review,
+        &.syntax--fixme,
+        &.syntax--xxx {
+          color: @todo;
+          font-weight: bold;
+          font-style: normal;
+        }
+      }
+    }
+  }
 }
 
 .syntax--storage {
@@ -41,21 +61,6 @@
       color: @syntax-color-class;
       &.syntax--doc {
         color: @syntax-color-variable;
-        font-style: normal;
-      }
-
-      &.syntax--todo,
-      &.syntax--hack,
-      &.syntax--bug,
-      &.syntax--note,
-      &.syntax--idea,
-      &.syntax--changed,
-      &.syntax--question,
-      &.syntax--review,
-      &.syntax--fixme,
-      &.syntax--xxx {
-        color: @todo;
-        font-weight: bold;
         font-style: normal;
       }
     }
