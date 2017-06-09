@@ -17,6 +17,13 @@
     }
   }
 
+  .syntax--decorator {
+    &.syntax--variable.syntax--other,
+    &.syntax--keyword.syntax--operator {
+      color: @constant;
+    }
+  }
+
   .syntax--support.syntax--variable.syntax--dom,
   .syntax--support.syntax--type.syntax--object.syntax--dom,
   .syntax--variable.syntax--language.syntax--self,
