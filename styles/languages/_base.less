@@ -81,6 +81,8 @@
   }
 
   &.syntax--other {
+    color: @syntax-color-symbol;
+
     &.syntax--symbol {
       color: @syntax-color-symbol;
     }
@@ -95,6 +97,12 @@
   color: @syntax-color-type;
 
   &.syntax--other {
+    color: @syntax-color-constant;
+
+    &.syntax--object.syntax--property {
+      color: @syntax-color-variable;
+    }
+
     &.syntax--block {
       color: @syntax-color-variable;
     }

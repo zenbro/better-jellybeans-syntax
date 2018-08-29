@@ -1,3 +1,6 @@
+## 1.1.0
+*  Fix ruby syntax colors in order to support Atom’s new parsing system
+
 ## 1.0.3
 *  Removing unnecessary "syntax--" prefix in javascript.less
 
